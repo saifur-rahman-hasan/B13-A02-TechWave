@@ -1,8 +1,16 @@
-body{
+body {
     background-color: #230E3D;
     color: white;
 }
 
+/* Gradient Button */
 .gradient-btn {
     background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.gradient-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(251, 9, 180, 0.3);
+}
+
