@@ -6,6 +6,9 @@
 
     <!-- Tailwindcss CDN Link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- Index Page Styles -->
     <link href="./styles/main.css" rel="stylesheet">
@@ -14,13 +17,226 @@
 </head>
 <body>
     
-    <!-- Header -->
-    <header>Header</header>
+    <!-- START: Navbar Section -->
+    <header class="bg-[#230E3D] sticky top-0 z-50">
+        <nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./assets/TechWaveLogo.png" alt="TechWave Logo" class="h-8 w-auto">
+            </div>
 
-    <!-- Main -->
-    <main>Main Content</main>
+            <!-- Menu Items (Desktop) -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-white text-sm hover:text-gray-300 transition">About</a>
+                <a href="#episodes" class="text-white text-sm hover:text-gray-300 transition">Episodes</a>
+                <a href="#host" class="text-white text-sm hover:text-gray-300 transition">Host</a>
+            </div>
 
-    <!-- Footer -->
-    <footer>Footer</footer>
+            <!-- CTA Button -->
+            <button class="hidden md:block gradient-btn text-white px-6 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition">
+                Subscribe
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+            <!-- Hamburger Menu Icon (Mobile) -->
+            <button class="md:hidden text-white text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- END: Navbar Section -->
+
+    <!-- START: Main Content -->
+    <main>
+
+        <!-- START: Banner Section -->
+        <section id="home" class="banner-section">
+            <div class="banner-container">
+                <div class="banner-content">
+                    <h1>Your Podcast Title</h1>
+                    <p>Welcome to our podcast network. Explore amazing content from around the world.</p>
+                    
+                    <!-- Podcast Circle View -->
+                    <div class="podcast-circle">
+                        <img src="" alt="Podcast Host">
+                        <span class="new-badge">New</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="banner-buttons">
+                        <button class="btn-primary">Listen Now</button>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: Banner Section -->
+
+        <!-- START: About Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <h2>About TechWave</h2>
+                <p>Discover the power of technology podcasting with our expert hosts and engaging content.</p>
+
+                <!-- Statistics -->
+                <div class="statistics">
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Episodes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500K+</h3>
+                        <p>Listeners</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Hosts</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Categories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: About Section -->
+
+        <!-- START: Why Choose Section -->
+        <section id="why-choose" class="why-choose-section">
+            <div class="why-choose-container">
+                <h2>Why Choose TechWave?</h2>
+                <p>Explore the reasons why thousands of podcast enthusiasts choose our platform.</p>
+
+                <!-- Feature Cards -->
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-icon"></i>
+                        <h3>High Quality</h3>
+                        <p>Experience crystal clear audio and professional production quality.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-icon"></i>
+                        <h3>Expert Hosts</h3>
+                        <p>Learn from industry experts and thought leaders.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-icon"></i>
+                        <h3>Diverse Content</h3>
+                        <p>Explore a wide range of topics and genres.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-icon"></i>
+                        <h3>Community</h3>
+                        <p>Connect with fellow podcast enthusiasts worldwide.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-icon"></i>
+                        <h3>Free Access</h3>
+                        <p>Enjoy unlimited access to our entire podcast library.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: Why Choose Section -->
+
+        <!-- START: Featured Episodes Section -->
+        <section id="episodes" class="featured-episodes-section">
+            <div class="episodes-container">
+                <h2>Featured Episodes</h2>
+                <p>Check out our latest and most popular episodes.</p>
+
+                <!-- Episode Cards -->
+                <div class="episodes-grid">
+                    <div class="episode-card">
+                        <div class="episode-video">
+                            <iframe src="" allowfullscreen></iframe>
+                        </div>
+                        <h3>Episode Title 1</h3>
+                        <p>Description of the episode and key topics discussed.</p>
+                        <span class="duration">45 min</span>
+                    </div>
+                    <div class="episode-card">
+                        <div class="episode-video">
+                            <iframe src="" allowfullscreen></iframe>
+                        </div>
+                        <h3>Episode Title 2</h3>
+                        <p>Description of the episode and key topics discussed.</p>
+                        <span class="duration">52 min</span>
+                    </div>
+                    <div class="episode-card">
+                        <div class="episode-video">
+                            <iframe src="" allowfullscreen></iframe>
+                        </div>
+                        <h3>Episode Title 3</h3>
+                        <p>Description of the episode and key topics discussed.</p>
+                        <span class="duration">38 min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: Featured Episodes Section -->
+
+        <!-- START: Host Section -->
+        <section id="host" class="host-section">
+            <div class="host-container">
+                <div class="host-image">
+                    <img src="./assets/host.png" alt="Host Profile">
+                </div>
+                <div class="host-info">
+                    <h2>Meet Our Host</h2>
+                    <p>Host Name</p>
+                    <p>Biography and professional background of the host. Share their expertise and experience in the podcasting industry.</p>
+                    
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END: Host Section -->
+
+    </main>
+    <!-- END: Main Content -->
+
+    <!-- START: Footer Section -->
+    <footer class="relative py-12 bg-cover bg-center" style="background-image: url('./assets/footer-bg.png')">
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <!-- Footer Content -->
+            <div class="flex flex-col items-center justify-center mb-8">
+                <!-- Logo -->
+                <img src="./assets/TechWaveLogo.png" alt="TechWave Logo" class="h-8 w-auto mb-6">
+
+                <!-- Social Links -->
+                <div class="flex items-center gap-6 mb-8">
+                    <a href="#" class="text-white hover:text-gray-300 transition text-sm flex items-center gap-2">
+                        <i class="fab fa-spotify"></i>
+                        <span class="hidden sm:inline">Spotify</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 transition text-sm flex items-center gap-2">
+                        <i class="fas fa-podcast"></i>
+                        <span class="hidden sm:inline">Apple Podcasts</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 transition text-sm flex items-center gap-2">
+                        <i class="fab fa-youtube"></i>
+                        <span class="hidden sm:inline">YouTube</span>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300 transition text-sm flex items-center gap-2">
+                        <i class="fab fa-twitter"></i>
+                        <span class="hidden sm:inline">Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-gray-400 text-sm">&copy; 2026 TechWave Podcast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END: Footer Section -->
 </body>
 </html>
