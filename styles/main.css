@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Gradient Button */
 .gradient-btn {
     background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
@@ -14,3 +19,86 @@ body {
     box-shadow: 0 10px 30px rgba(251, 9, 180, 0.3);
 }
 
+/* Button Animations */
+.btn-animate {
+    transition: all 0.3s ease;
+}
+
+.btn-animate:hover {
+    transform: translateY(-2px);
+}
+
+/* Card Hover Animations */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(145, 0, 248, 0.15);
+}
+
+/* Podcast Circle Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.hero-circle {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* NEW Badge Animation */
+.new-badge {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Statistics Number Animation */
+.stat-number {
+    transition: transform 0.3s ease;
+}
+
+.stat-number:hover {
+    transform: scale(1.05);
+}
+
+/* Social Links Animation */
+.social-link {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Gradient Icon */
+.gradient-icon {
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Focus States for Accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid #9100F8;
+    outline-offset: 2px;
+}

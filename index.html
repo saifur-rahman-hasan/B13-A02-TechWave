@@ -55,9 +55,9 @@
 
                 <!-- Podcast Circle View -->
                 <div class="relative inline-block mb-8">
-                    <img src="./assets/hero-circle.png" alt="Podcast Circle" class="w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <img src="./assets/hero-circle.png" alt="Podcast Circle" class="hero-circle w-48 h-48 md:w-64 md:h-64 mx-auto">
                     <!-- NEW Badge -->
-                    <span class="absolute top-0 right-0 md:right-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">NEW</span>
+                    <span class="new-badge absolute top-0 right-0 md:right-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">NEW</span>
                 </div>
 
                 <!-- Heading -->
@@ -68,12 +68,12 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#" class="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition">
-                        <img src="./assets/spotify.png" alt="Spotify" class="w-5 h-5">
+                    <a href="#" class="btn-animate flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90">
+                        <i class="fab fa-spotify text-lg"></i>
                         Spotify
                     </a>
-                    <a href="#" class="flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-white/10 transition">
-                        <img src="./assets/youtube-podcast.png" alt="YouTube Podcast" class="w-5 h-5">
+                    <a href="#" class="btn-animate flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-white/10">
+                        <i class="fab fa-youtube text-lg"></i>
                         YouTube Podcast
                     </a>
                 </div>
@@ -91,23 +91,23 @@
                 <!-- Statistics -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
                     <!-- Stat 1 -->
-                    <div class="bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">150K+</h3>
+                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
+                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">150K+</h3>
                         <p class="text-gray-400 text-sm">Active Listeners</p>
                     </div>
                     <!-- Stat 2 -->
-                    <div class="bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">200+</h3>
+                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
+                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">200+</h3>
                         <p class="text-gray-400 text-sm">Episodes Available</p>
                     </div>
                     <!-- Stat 3 -->
-                    <div class="bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">4.9+</h3>
+                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
+                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">4.9+</h3>
                         <p class="text-gray-400 text-sm">Positive Reviews</p>
                     </div>
                     <!-- Stat 4 -->
-                    <div class="bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">50+</h3>
+                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
+                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">50+</h3>
                         <p class="text-gray-400 text-sm">Expert Hosts</p>
                     </div>
                 </div>
@@ -127,45 +127,45 @@
                 <!-- Feature Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     <!-- Card 1: Premium Audio Quality -->
-                    <div class="bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <img src="./assets/headphone.png" alt="Audio Quality" class="w-6 h-6">
+                            <i class="fas fa-headphones text-xl gradient-icon"></i>
                         </div>
                         <h3 class="text-lg font-semibold text-white mb-2">Premium Audio Quality</h3>
                         <p class="text-gray-400 text-sm">Experience crystal-clear sound with our professionally mastered episodes, ensuring every word is heard perfectly.</p>
                     </div>
 
                     <!-- Card 2: Mobile Friendly -->
-                    <div class="bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <img src="./assets/device.png" alt="Mobile Friendly" class="w-6 h-6">
+                            <i class="fas fa-mobile-alt text-xl gradient-icon"></i>
                         </div>
                         <h3 class="text-lg font-semibold text-white mb-2">Mobile Friendly</h3>
                         <p class="text-gray-400 text-sm">Listen on the go with our fully optimized mobile experience across all devices and platforms.</p>
                     </div>
 
                     <!-- Card 3: Global Community -->
-                    <div class="bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <img src="./assets/location.png" alt="Global Community" class="w-6 h-6">
+                            <i class="fas fa-globe text-xl gradient-icon"></i>
                         </div>
                         <h3 class="text-lg font-semibold text-white mb-2">Global Community</h3>
                         <p class="text-gray-400 text-sm">Join thousands of tech enthusiasts from around the world who share your passion for innovation.</p>
                     </div>
 
                     <!-- Card 4: Exclusive Interviews -->
-                    <div class="bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <img src="./assets/microphone.png" alt="Exclusive Interviews" class="w-6 h-6">
+                            <i class="fas fa-microphone text-xl gradient-icon"></i>
                         </div>
                         <h3 class="text-lg font-semibold text-white mb-2">Exclusive Interviews</h3>
                         <p class="text-gray-400 text-sm">Get insights from industry leaders, innovators, and experts through our exclusive interview series.</p>
                     </div>
 
                     <!-- Card 5: Rich Resources -->
-                    <div class="bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
                         <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <img src="./assets/resource.png" alt="Rich Resources" class="w-6 h-6">
+                            <i class="fas fa-book-open text-xl gradient-icon"></i>
                         </div>
                         <h3 class="text-lg font-semibold text-white mb-2">Rich Resources</h3>
                         <p class="text-gray-400 text-sm">Access comprehensive show notes, links, and additional resources with every episode.</p>
@@ -187,48 +187,48 @@
                 <!-- Episode Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     <!-- Episode Card 1 -->
-                    <div class="bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40">
                         <!-- Video Embed -->
                         <div class="aspect-video">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Episode 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/QOKLW5ITEiI" title="Episode 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-5">
                             <h3 class="text-lg font-semibold text-white mb-2">The Future of AI in Everyday Life</h3>
                             <p class="text-gray-400 text-sm mb-4">Exploring how artificial intelligence is transforming our daily routines and what to expect in the coming years.</p>
                             <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <img src="./assets/clock.png" alt="Duration" class="w-4 h-4">
+                                <i class="far fa-clock"></i>
                                 <span>45 min</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Episode Card 2 -->
-                    <div class="bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40">
                         <!-- Video Embed -->
                         <div class="aspect-video">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Episode 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/NgoJjIFULDE" title="Episode 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-5">
                             <h3 class="text-lg font-semibold text-white mb-2">Building Better Habits for Remote Work</h3>
                             <p class="text-gray-400 text-sm mb-4">Tips and strategies from productivity experts on mastering the art of working from home effectively.</p>
                             <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <img src="./assets/clock.png" alt="Duration" class="w-4 h-4">
+                                <i class="far fa-clock"></i>
                                 <span>52 min</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Episode Card 3 -->
-                    <div class="bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40 transition">
+                    <div class="card-hover bg-[#1a0a2e] border border-purple-500/20 rounded-xl overflow-hidden hover:border-purple-500/40">
                         <!-- Video Embed -->
                         <div class="aspect-video">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Episode 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/XmWkcePhf84" title="Episode 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="p-5">
                             <h3 class="text-lg font-semibold text-white mb-2">Career Growth in Tech: A Roadmap</h3>
                             <p class="text-gray-400 text-sm mb-4">Industry veterans share their insights on navigating career paths and achieving success in the tech industry.</p>
                             <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                <img src="./assets/clock.png" alt="Duration" class="w-4 h-4">
+                                <i class="far fa-clock"></i>
                                 <span>38 min</span>
                             </div>
                         </div>
@@ -249,8 +249,8 @@
                 <!-- Host Content -->
                 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-5xl mx-auto">
                     <!-- Host Image -->
-                    <div class="w-full md:w-1/2">
-                        <img src="./assets/host.png" alt="Alex Kumar - Host" class="w-full max-w-md mx-auto rounded-2xl">
+                    <div class="w-full md:w-2/5">
+                        <img src="./assets/host.png" alt="Alex Kumar - Host" class="w-full max-w-xs mx-auto rounded-2xl">
                     </div>
 
                     <!-- Host Info -->
@@ -261,14 +261,14 @@
 
                         <!-- Social Media Links -->
                         <div class="flex items-center justify-center md:justify-start gap-4">
-                            <a href="#" class="w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500 transition">
-                                <img src="./assets/x.png" alt="X (Twitter)" class="w-5 h-5">
+                            <a href="#" class="social-link w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500">
+                                <i class="fab fa-x-twitter gradient-icon"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500 transition">
-                                <img src="./assets/linkedin.png" alt="LinkedIn" class="w-5 h-5">
+                            <a href="#" class="social-link w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500">
+                                <i class="fab fa-linkedin-in gradient-icon"></i>
                             </a>
-                            <a href="#" class="w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500 transition">
-                                <img src="./assets/instagram.png" alt="Instagram" class="w-5 h-5">
+                            <a href="#" class="social-link w-10 h-10 bg-[#230E3D] border border-purple-500/30 rounded-full flex items-center justify-center hover:border-purple-500">
+                                <i class="fab fa-instagram gradient-icon"></i>
                             </a>
                         </div>
                     </div>
@@ -290,29 +290,29 @@
 
                 <!-- Platform Links -->
                 <div class="flex flex-wrap items-center justify-center gap-4 md:gap-8 mb-8">
-                    <a href="#" class="text-white hover:text-purple-400 transition text-sm flex items-center gap-2">
-                        <img src="./assets/spotify.png" alt="Spotify" class="w-5 h-5">
+                    <a href="#" class="btn-animate text-white hover:text-purple-400 text-sm flex items-center gap-2">
+                        <i class="fab fa-spotify text-lg"></i>
                         <span>Spotify</span>
                     </a>
-                    <a href="#" class="text-white hover:text-purple-400 transition text-sm flex items-center gap-2">
-                        <img src="./assets/apple-podcast.png" alt="Apple Podcasts" class="w-5 h-5">
+                    <a href="#" class="btn-animate text-white hover:text-purple-400 text-sm flex items-center gap-2">
+                        <i class="fas fa-podcast text-lg"></i>
                         <span>Apple Podcasts</span>
                     </a>
-                    <a href="#" class="text-white hover:text-purple-400 transition text-sm flex items-center gap-2">
-                        <img src="./assets/youtube-podcast.png" alt="YouTube Podcast" class="w-5 h-5">
+                    <a href="#" class="btn-animate text-white hover:text-purple-400 text-sm flex items-center gap-2">
+                        <i class="fab fa-youtube text-lg"></i>
                         <span>YouTube Podcast</span>
                     </a>
-                    <a href="#" class="text-white hover:text-purple-400 transition text-sm flex items-center gap-2">
-                        <img src="./assets/x.png" alt="X" class="w-5 h-5">
+                    <a href="#" class="btn-animate text-white hover:text-purple-400 text-sm flex items-center gap-2">
+                        <i class="fab fa-x-twitter text-lg"></i>
                         <span>X</span>
                     </a>
                 </div>
 
                 <!-- Horizontal Line -->
-                <div class="w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent mb-6"></div>
+                <div class="w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent mb-8"></div>
 
                 <!-- Copyright -->
-                <p class="text-gray-400 text-sm text-center">&copy; 2026 TechWave Podcast. All rights reserved.</p>
+                <p class="text-gray-400 text-sm text-center mt-6">&copy; 2026 TechWave Podcast. All rights reserved.</p>
             </div>
         </div>
     </footer>
