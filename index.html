@@ -18,7 +18,7 @@
 <body>
     
     <!-- START: Navbar Section -->
-    <header class="bg-[#230E3D] sticky top-0 z-50">
+    <header class="bg-[#230E3D] fixed top-0 left-0 w-full z-50">
         <nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
             <!-- Logo -->
             <div class="flex items-center">
@@ -47,34 +47,41 @@
     <!-- END: Navbar Section -->
 
     <!-- START: Main Content -->
-    <main>
+    <main class="pt-34">
 
         <!-- START: Banner Section -->
-        <section id="home" class="relative min-h-[600px] md:min-h-[700px] bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url('./assets/hero-bg.png')">
-            <div class="container mx-auto px-6 py-12 text-center">
+        <section id="home" class="hero-section relative md:min-h-[700px] flex items-center justify-center py-6 md:py-0 overflow-hidden">
+            <!-- Hero Background Image -->
+            <img src="./assets/hero-bg.png" alt="" class="hero-bg-img absolute pointer-events-none">
+
+            <div class="container mx-auto px-4 md:px-6 py-6 md:py-12 text-center relative z-10">
 
                 <!-- Podcast Circle View -->
-                <div class="relative inline-block mb-8">
-                    <img src="./assets/hero-circle.png" alt="Podcast Circle" class="hero-circle w-48 h-48 md:w-64 md:h-64 mx-auto">
+                <div class="hero-circle relative inline-block mb-6 md:mb-8">
+                    <img src="./assets/hero-circle.png" alt="Podcast Circle" class="relative w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 mx-auto">
+                    <!-- Microphone Icon -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <i class="fas fa-microphone text-4xl sm:text-5xl md:text-7xl text-white"></i>
+                    </div>
                     <!-- NEW Badge -->
-                    <span class="new-badge absolute top-0 right-0 md:right-4 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">NEW</span>
+                    <span class="new-badge absolute -top-1 -right-1 sm:top-0 sm:right-0 md:right-4 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full">NEW</span>
                 </div>
 
                 <!-- Heading -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">TechWave</h1>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-4">TechWave</h1>
 
                 <!-- Subtitle -->
-                <p class="text-gray-300 text-sm md:text-base max-w-2xl mx-auto mb-8">Your Gateway to Tech Insights & Innovations. Join us as we explore the latest trends, breakthrough technologies, and inspiring stories from the world of tech.</p>
+                <p class="text-gray-300 text-xs sm:text-sm md:text-base max-w-xs sm:max-w-lg md:max-w-2xl mx-auto mb-6 md:mb-8 leading-relaxed">Your Gateway to Tech Insights & Innovations. Join us as we explore the latest trends, breakthrough technologies, and inspiring stories from the world of tech.</p>
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#" class="btn-animate flex items-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90">
-                        <i class="fab fa-spotify text-lg"></i>
-                        Spotify
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                    <a href="#" class="btn-animate w-full sm:w-auto flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:opacity-90">
+                        <i class="fa-brands fa-spotify text-lg"></i>
+                        Listen on Spotify
                     </a>
-                    <a href="#" class="btn-animate flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-white/10">
-                        <i class="fab fa-youtube text-lg"></i>
-                        YouTube Podcast
+                    <a href="#" class="btn-animate w-full sm:w-auto flex items-center justify-center gap-2 border border-green-500 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-gray-800">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                        Subscribe
                     </a>
                 </div>
             </div>
@@ -89,25 +96,25 @@
                 <p class="text-gray-400 text-sm md:text-base max-w-3xl mx-auto mb-12">TechWave brings you the latest in technology, innovation, and digital transformation. Our expert hosts dive deep into trending topics, interview industry leaders, and break down complex tech concepts into engaging conversations that inspire and educate.</p>
 
                 <!-- Statistics -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
                     <!-- Stat 1 -->
-                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">150K+</h3>
+                    <div class="text-center">
+                        <h3 class="stat-number text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 mb-2">150K+</h3>
                         <p class="text-gray-400 text-sm">Active Listeners</p>
                     </div>
                     <!-- Stat 2 -->
-                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">200+</h3>
+                    <div class="text-center">
+                        <h3 class="stat-number text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 mb-2">200+</h3>
                         <p class="text-gray-400 text-sm">Episodes Available</p>
                     </div>
                     <!-- Stat 3 -->
-                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">4.9+</h3>
+                    <div class="text-center">
+                        <h3 class="stat-number text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 mb-2">4.9+</h3>
                         <p class="text-gray-400 text-sm">Positive Reviews</p>
                     </div>
                     <!-- Stat 4 -->
-                    <div class="card-hover bg-[#1a0a2e]/50 border border-purple-500/20 rounded-xl p-6">
-                        <h3 class="stat-number text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 mb-2">50+</h3>
+                    <div class="text-center">
+                        <h3 class="stat-number text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-green-500 to-green-600 mb-2">50+</h3>
                         <p class="text-gray-400 text-sm">Expert Hosts</p>
                     </div>
                 </div>

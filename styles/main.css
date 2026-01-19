@@ -1,11 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #230E3D;
     color: white;
 }
 
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
+
+/* Hero Section Background */
+.hero-section {
+    background-color: #230E3D;
+}
+
+.hero-bg-img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .hero-bg-img {
+        width: 150%;
+        top: 42%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-bg-img {
+        width: 250%;
+        top: 10%;
+        transform: translate(-50%, 0);
+    }
 }
 
 /* Gradient Button */
