@@ -125,50 +125,59 @@
                 </div>
 
                 <!-- Feature Cards Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                    <!-- Card 1: Premium Audio Quality -->
-                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-headphones text-xl gradient-icon"></i>
+                <div class="max-w-6xl mx-auto">
+                    <!-- Top Section: 5 columns grid (2 for left, 3 for right) -->
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mb-6">
+                        <!-- Card 1: Premium Audio Quality (narrower - 2 cols) -->
+                        <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-3xl p-8 hover:border-purple-500/40 md:col-span-2">
+                            <div class="mb-4">
+                                <i class="fas fa-headphones text-3xl gradient-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Premium Audio Quality</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
                         </div>
-                        <h3 class="text-lg font-semibold text-white mb-2">Premium Audio Quality</h3>
-                        <p class="text-gray-400 text-sm">Experience crystal-clear sound with our professionally mastered episodes, ensuring every word is heard perfectly.</p>
+
+                        <!-- Right Column: 2 stacked cards (wider - 3 cols) -->
+                        <div class="flex flex-col gap-6 md:col-span-3">
+                            <!-- Card 2: Mobile Friendly -->
+                            <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-3xl p-8 hover:border-purple-500/40 flex-1">
+                                <div class="mb-4">
+                                    <i class="fas fa-mobile-alt text-3xl gradient-icon"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-3">Mobile Friendly</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">Listen on the go with seamless mobile experience and offline downloads.</p>
+                            </div>
+
+                            <!-- Card 3: Global Community -->
+                            <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-3xl p-8 hover:border-purple-500/40 flex-1">
+                                <div class="mb-4">
+                                    <i class="fas fa-globe text-3xl gradient-icon"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-white mb-3">Global Community</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Card 2: Mobile Friendly -->
-                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-mobile-alt text-xl gradient-icon"></i>
+                    <!-- Bottom Section: 2 columns -->
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                        <!-- Card 4: Exclusive Interviews (wider) -->
+                        <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-3xl p-8 hover:border-purple-500/40 md:col-span-3">
+                            <div class="mb-4">
+                                <i class="fas fa-bolt text-3xl gradient-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Exclusive Interviews</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                         </div>
-                        <h3 class="text-lg font-semibold text-white mb-2">Mobile Friendly</h3>
-                        <p class="text-gray-400 text-sm">Listen on the go with our fully optimized mobile experience across all devices and platforms.</p>
-                    </div>
 
-                    <!-- Card 3: Global Community -->
-                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-globe text-xl gradient-icon"></i>
+                        <!-- Card 5: Rich Resources -->
+                        <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-3xl p-8 hover:border-purple-500/40 md:col-span-2">
+                            <div class="mb-4">
+                                <i class="fas fa-book-open text-3xl gradient-icon"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Rich Resources</h3>
+                            <p class="text-gray-400 text-sm leading-relaxed">Access show notes, transcripts, and additional learning materials for every episode.</p>
                         </div>
-                        <h3 class="text-lg font-semibold text-white mb-2">Global Community</h3>
-                        <p class="text-gray-400 text-sm">Join thousands of tech enthusiasts from around the world who share your passion for innovation.</p>
-                    </div>
-
-                    <!-- Card 4: Exclusive Interviews -->
-                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-microphone text-xl gradient-icon"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2">Exclusive Interviews</h3>
-                        <p class="text-gray-400 text-sm">Get insights from industry leaders, innovators, and experts through our exclusive interview series.</p>
-                    </div>
-
-                    <!-- Card 5: Rich Resources -->
-                    <div class="card-hover bg-[#230E3D] border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40">
-                        <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-4">
-                            <i class="fas fa-book-open text-xl gradient-icon"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2">Rich Resources</h3>
-                        <p class="text-gray-400 text-sm">Access comprehensive show notes, links, and additional resources with every episode.</p>
                     </div>
                 </div>
             </div>
